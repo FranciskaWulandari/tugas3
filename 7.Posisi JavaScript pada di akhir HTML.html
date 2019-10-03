@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--Tag untuk menentukan tipe dokumen -->
+
+<html>
+    <head>
+    <!-- pembuka tag head yang berfungsi sebagai kepala dari dokumen html -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <!--tag ini ditujukan bukan kepada user, tetapi kepada web browser atau kepada ‘robot program‘ 
+    seperti mesin pencari (search engine).  untuk menerjemahkan karakter-karakter di dalam halaman HTML sebagai UTF-8.-->
+
+    <title>Belajar JavaScript</title>
+    <!-- tag title berfungsi sebagai judul dari dokumen html yang kita buat -->
+
+    </head>
+    <!--berfungsi untuk penutup tag head-->
+
+    <body>
+    <!-- pembuka tag body yang berfungsi untuk menampilkan isi dokumen html kita -->
+
+        <h1>Belajar JavaScript</h1>
+        <!-- tag ini digunakan pada nama blog/website (jika berada pada homepage) -->
+
+            <p> Saya sedang belajar JavaScript di jti.polije.com </p>
+            <!--tag Untuk membuat paragraf-->
+
+        <div id="div_semangat"></div>
+        <!--elemen id-->
+
+    </body>
+    <!--tag untuk menutup body dari dokumen html-->
+
+        <!--Program Javascript disisipkan ke dalam dokumen HTML dengan ditandai dengan tag yang diawali dengan script-->
+        <script>
+            var a=document.getElementById("div_semangat");
+            /*untuk mengambil sebuah value melalui ID*/
+            
+            a.innerHTML="<p>Sedang Belajar JavaScript, Semangat...!!!</p>";
+             /*konten dari elemen yang diacu (elemen <p> dengan id “div_semangat”) diisikan nilai"Sedang Belajar JavaScript,Semangat...!!!" */
+   
+        </script>
+</html>

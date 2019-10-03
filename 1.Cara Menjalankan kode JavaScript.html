@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+ <!--Tag untuk menentukan tipe dokumen -->
+
+<html>
+
+<!-- pembuka tag head yang berfungsi sebagai kepala dari dokumen html -->
+<head>
+    <title>Belajar JavaScript di Jti.polije</title>
+    <!-- tag title berfungsi sebagai judul dari dokumen html yang kita buat -->
+
+    <!--Program Javascript disisipkan ke dalam dokumen HTML dengan ditandai dengan tag yang diawali dengan script-->
+    <!--menginformasikan kepada browser bahwaprogram script yang ada dalam tag tersebut adalah javascript dalam format text-->
+    <script type="text/javascript">
+
+        /*untuk informasi mendetail tentang fungsi-fungsi*/
+        function tambah_semangat()
+
+        /*untuk mengambil sebuah value melalui ID*/
+        {
+        var a=document.getElementById("div_semangat");
+        a.innerHTML+="<p>Sedang Belajar JavaScript,Semangat...!!!</p>";
+        }
+        /*konten dari elemen yang diacu (elemen <p> dengan id “div_semangat”) diisikan nilai"Sedang Belajar JavaScript,Semangat...!!!" */
+   
+    </script>
+</head>
+<!--penutup tag head-->
+
+    <body>
+         <!-- pembuka tag body yang berfungsi untuk menampilkan isi dokumen html kita -->
+
+        <h1>Belajar JavaScript</h1>
+            <p> Saya sedang belajar JavaScript di jti.polije.com </p>
+            Klik tombol ini untuk menambahkan kalimat baru:
+        <button id="tambah" onclick="tambah_semangat()">Semangaat..!!</button>
+        <!--untuk menambahkan button-->
+
+        <div id="div_semangat"></div>
+    </body>
+    <!--tag penutup body-->
+
+</html>
+<!--tag penuutup html-->
